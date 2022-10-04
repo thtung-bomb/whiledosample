@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let so;
+        let soLan = 0;
+        let soCanDoan = Math.floor(Math.random()*30)
+        while(soLan < 3)
+        {
+            so = +prompt("Hãy nhập vào số của bạn (từ 1 đến 30) !!! ");
+            if(so < soCanDoan)
+            {
+                alert("Số bạn nhỏ hơn số cần đoán !!!");
+            }
+            else
+            {
+                if(so > soCanDoan)
+                {
+                    alert("số bạn lớn hơn số cần đoán !!!")
+                }
+                else
+                {
+                    alert("Bạn đoán đúng rồi ^^");
+                    break;
+                }
+            }
+            soLan++;
+        }   
+            alert("Bạn đã thua, Số cần đoán là " +soCanDoan);
+    </script>
+</body>
+</html>
