@@ -8,20 +8,16 @@
 </head>
 <body>
     <script>
-        //Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.
-        let i = 1;
-        let sum = 0;
-        let a = 0;
-
-        for(i; i < 31; i++)
-        {
-            if(a % 7 == 0)
+            let num = parseInt(prompt("Enter your number"));
+            let rev = 0;
+            let rem = 0;
+            while(num > 0)
             {
-                sum += a;    
+                rem = num % 10;
+                rev = (rev * 10) + rem;
+                num = parseInt(num / 10);
             }
-            a+=7;
-        }
-        alert(sum);
+            alert(rev);
     </script>
 </body>
 </html>
